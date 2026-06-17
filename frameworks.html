@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kodavara's proprietary frameworks and accelerators: Intelligent Operations, Human-AI Partnership, AI Adoption, Knowledge Continuity, and Agent Experience." />
+  <title>Frameworks & Accelerators — Kodavara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .framework-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border-light);
+      border-radius: 20px;
+      padding: 3rem;
+      margin-bottom: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+    .framework-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom, var(--blue), transparent);
+      border-radius: 20px 0 0 20px;
+    }
+    .framework-card--gold::before { background: linear-gradient(to bottom, var(--gold), transparent); }
+    .framework-card:hover {
+      border-color: rgba(45,140,255,0.25);
+      transform: translateX(4px);
+    }
+    .framework-name {
+      font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+    .framework-desc {
+      font-size: 0.9375rem;
+      color: rgba(248,250,252,0.62);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+    .accelerator-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .accelerator-card .coming-badge {
+      position: absolute;
+      top: 1.25rem; right: 1.25rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.65rem;
+      border-radius: 100px;
+      background: rgba(245,185,66,0.12);
+      color: var(--gold);
+      border: 1px solid rgba(245,185,66,0.2);
+    }
+    .accelerator-card .rd-badge {
+      background: rgba(45,140,255,0.1);
+      color: var(--sky);
+      border-color: rgba(45,140,255,0.2);
+    }
+  </style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-label="Frameworks hero">
+  <div class="page-hero__gradient" aria-hidden="true"></div>
+  <div class="orb orb--gold" style="top:50px;right:15%;" aria-hidden="true"></div>
+  <div class="container page-hero__content">
+    <span class="t-eyebrow" style="display:block;margin-bottom:1.25rem;">Frameworks &amp; Accelerators</span>
+    <h1 class="t-display" style="margin-bottom:1.5rem;">Practical Frameworks.<br/><span class="accent-gold">Proven Methodologies.</span><br/>Accelerated Outcomes.</h1>
+    <p class="t-body">Purpose-built frameworks developed from real organizational transformation — not academic theory.</p>
+  </div>
+</section>
+
+<!-- CORE FRAMEWORKS -->
+<section class="section section--dark" aria-labelledby="core-frameworks-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="t-eyebrow">Core Frameworks</span>
+      <h2 class="t-h2" id="core-frameworks-heading">The methodologies behind every engagement</h2>
+      <p class="t-body">Each framework represents a structured approach to a common organizational challenge — tested, refined, and designed to produce predictable outcomes.</p>
+    </div>
+
+    <!-- IOF -->
+    <div class="framework-card reveal">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="badge badge--blue" style="margin-bottom:1rem;">Operational</span>
+          <div class="framework-name">Intelligent Operations Framework™</div>
+          <div class="framework-desc">A structured six-phase approach to assessing your current state, designing the right operational architecture, implementing systems, layering in automation, amplifying with AI, and building in continuous improvement loops.</div>
+          <a href="contact.html" class="btn btn--outline" style="font-size:0.875rem;">Apply This Framework →</a>
+        </div>
+        <div class="framework-steps">
+          <div class="step">
+            <div class="step__num">01</div>
+            <div>
+              <div class="step__label">Phase One</div>
+              <div class="step__title">Assess</div>
+              <div class="step__desc">Honest evaluation of current state — people, process, systems, and data quality.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">02</div>
+            <div>
+              <div class="step__label">Phase Two</div>
+              <div class="step__title">Design</div>
+              <div class="step__desc">Architecture of the target state — workflow design, system selection, and operational model.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">03</div>
+            <div>
+              <div class="step__label">Phase Three</div>
+              <div class="step__title">Implement</div>
+              <div class="step__desc">Structured deployment with change management, training, and adoption support.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">04</div>
+            <div>
+              <div class="step__label">Phase Four</div>
+              <div class="step__title">Automate</div>
+              <div class="step__desc">Systematic reduction of manual effort through intelligent workflow automation.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">05</div>
+            <div>
+              <div class="step__label">Phase Five</div>
+              <div class="step__title">Amplify</div>
+              <div class="step__desc">Intentional introduction of AI where it creates measurable leverage on strong foundations.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">06</div>
+            <div>
+              <div class="step__label">Phase Six</div>
+              <div class="step__title">Optimize</div>
+              <div class="step__desc">Continuous improvement loops that evolve the system as the organization grows and changes.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HAPF -->
+    <div class="framework-card framework-card--gold reveal">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="badge badge--gold" style="margin-bottom:1rem;">AI Integration</span>
+          <div class="framework-name">Human-AI Partnership Framework™</div>
+          <div class="framework-desc">A model for thinking about where AI fits in an organization and how to sequence the integration — always starting with people and process before introducing intelligent systems. AI is a layer on top of a working foundation, not a replacement for one.</div>
+          <a href="contact.html" class="btn btn--outline" style="font-size:0.875rem;">Apply This Framework →</a>
+        </div>
+        <div>
+          <div style="display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2rem;">
+            <div style="display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid var(--border-light);">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(245,185,66,0.15);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;">👥</div>
+              <div><div style="font-size:0.875rem;font-weight:600;color:var(--white);margin-bottom:0.2rem;">People</div><div style="font-size:0.8rem;color:rgba(248,250,252,0.5);">Skills, judgment, relationships, and expertise</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid var(--border-light);">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(245,185,66,0.15);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;">🔄</div>
+              <div><div style="font-size:0.875rem;font-weight:600;color:var(--white);margin-bottom:0.2rem;">Process</div><div style="font-size:0.8rem;color:rgba(248,250,252,0.5);">Workflows, decision points, and accountability</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid var(--border-light);">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(245,185,66,0.15);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;">⚙️</div>
+              <div><div style="font-size:0.875rem;font-weight:600;color:var(--white);margin-bottom:0.2rem;">Systems</div><div style="font-size:0.8rem;color:rgba(248,250,252,0.5);">Platforms, tools, and operational infrastructure</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid var(--border-light);">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(245,185,66,0.2);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;">🤖</div>
+              <div><div style="font-size:0.875rem;font-weight:600;color:var(--gold);margin-bottom:0.2rem;">Intelligence</div><div style="font-size:0.8rem;color:rgba(248,250,252,0.5);">AI and automation, layered on a working foundation</div></div>
+            </div>
+            <div style="display:flex;align-items:center;gap:1rem;padding:1rem 1.25rem;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid var(--border-light);">
+              <div style="width:36px;height:36px;border-radius:8px;background:rgba(245,185,66,0.15);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;">📈</div>
+              <div><div style="font-size:0.875rem;font-weight:600;color:var(--white);margin-bottom:0.2rem;">Outcomes</div><div style="font-size:0.8rem;color:rgba(248,250,252,0.5);">Measurable, sustainable, human-centered results</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Adoption -->
+    <div class="framework-card reveal">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+        <div>
+          <span class="badge badge--green" style="margin-bottom:1rem;">AI Readiness</span>
+          <div class="framework-name">AI Adoption Framework™</div>
+          <div class="framework-desc">A five-stage model for moving from AI curiosity to AI capability — ensuring organizations build the awareness, readiness, and governance required to scale AI responsibly before scaling it broadly.</div>
+          <a href="contact.html" class="btn btn--outline" style="font-size:0.875rem;">Begin Your Assessment →</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <div style="display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:center;padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid var(--border-light);">
+            <div style="width:36px;height:36px;border-radius:50%;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;color:#4ade80;">1</div>
+            <div><div style="font-size:0.875rem;font-weight:600;color:var(--white);">Awareness</div><div style="font-size:0.8rem;color:rgba(248,250,252,0.5);">Understanding AI — what it is, what it can do, and where it creates risk</div></div>
+          </div>
+          <div style="display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:center;padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid var(--border-light);">
+            <div style="width:36px;height:36px;border-radius:50%;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;color:#4ade80;">2</div>
+            <div><div style="font-size:0.875rem;font-weight:600;color:var(--white);">Readiness</div><div style="font-size:0.8rem;color:rgba(248,250,252,0.5);">Assessing people, data, systems, and governance maturity</div></div>
+          </div>
+          <div style="display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:center;padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid var(--border-light);">
+            <div style="width:36px;height:36px;border-radius:50%;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;color:#4ade80;">3</div>
+            <div><div style="font-size:0.875rem;font-weight:600;color:var(--white);">Enablement</div><div style="font-size:0.8rem;color:rgba(248,250,252,0.5);">Building the skills, tools, and infrastructure to deploy effectively</div></div>
+          </div>
+          <div style="display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:center;padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid var(--border-light);">
+            <div style="width:36px;height:36px;border-radius:50%;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;color:#4ade80;">4</div>
+            <div><div style="font-size:0.875rem;font-weight:600;color:var(--white);">Governance</div><div style="font-size:0.8rem;color:rgba(248,250,252,0.5);">Policies, oversight, and accountability frameworks for responsible use</div></div>
+          </div>
+          <div style="display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:center;padding:1.25rem;background:rgba(34,197,94,0.06);border-radius:10px;border:1px solid rgba(34,197,94,0.15);">
+            <div style="width:36px;height:36px;border-radius:50%;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.3);display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;color:#4ade80;">5</div>
+            <div><div style="font-size:0.875rem;font-weight:600;color:#4ade80;">Scale</div><div style="font-size:0.8rem;color:rgba(248,250,252,0.5);">Expanding AI capability across the organization with confidence</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Knowledge Continuity -->
+    <div class="framework-card reveal">
+      <span class="badge badge--blue" style="margin-bottom:1rem;">Knowledge</span>
+      <div class="framework-name">Knowledge Continuity Framework™</div>
+      <div class="framework-desc">Organizations lose knowledge constantly — through turnover, growth, and the simple pace of work. This framework creates systematic approaches to capture, organize, preserve, share, and evolve organizational knowledge as a strategic asset.</div>
+      <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:1.5rem;">
+        <div style="text-align:center;padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid var(--border-light);">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">📥</div>
+          <div style="font-size:0.8rem;font-weight:600;color:var(--white);">Capture</div>
+        </div>
+        <div style="text-align:center;padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid var(--border-light);">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🗂️</div>
+          <div style="font-size:0.8rem;font-weight:600;color:var(--white);">Organize</div>
+        </div>
+        <div style="text-align:center;padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid var(--border-light);">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🔒</div>
+          <div style="font-size:0.8rem;font-weight:600;color:var(--white);">Preserve</div>
+        </div>
+        <div style="text-align:center;padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid var(--border-light);">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🔗</div>
+          <div style="font-size:0.8rem;font-weight:600;color:var(--white);">Share</div>
+        </div>
+        <div style="text-align:center;padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid var(--border-light);">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;">🔄</div>
+          <div style="font-size:0.8rem;font-weight:600;color:var(--white);">Evolve</div>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn--outline" style="font-size:0.875rem;">Apply This Framework →</a></div>
+    </div>
+
+    <!-- Agent Experience -->
+    <div class="framework-card reveal">
+      <span class="badge badge--gold" style="margin-bottom:1rem;">Agent-Ready</span>
+      <div class="framework-name">Agent Experience Framework™</div>
+      <div class="framework-desc">Ensuring websites, content, systems, and documentation are designed for both humans and intelligent agents. As AI agents become part of how organizations operate, the systems and content they interact with must be deliberately designed for that interaction.</div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.5rem;">
+        <div style="padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid var(--border-light);">
+          <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;">Layer 1</div>
+          <div style="font-size:0.875rem;font-weight:600;color:var(--white);">Human Ready</div>
+          <div style="font-size:0.8rem;color:rgba(248,250,252,0.5);margin-top:0.25rem;">Clear for human users first</div>
+        </div>
+        <div style="padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid var(--border-light);">
+          <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;">Layer 2</div>
+          <div style="font-size:0.875rem;font-weight:600;color:var(--white);">Machine Readable</div>
+          <div style="font-size:0.8rem;color:rgba(248,250,252,0.5);margin-top:0.25rem;">Structured for systems</div>
+        </div>
+        <div style="padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid var(--border-light);">
+          <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;">Layer 3</div>
+          <div style="font-size:0.875rem;font-weight:600;color:var(--white);">Agent Accessible</div>
+          <div style="font-size:0.8rem;color:rgba(248,250,252,0.5);margin-top:0.25rem;">Navigable by AI agents</div>
+        </div>
+        <div style="padding:1.25rem;background:rgba(255,255,255,0.03);border-radius:12px;border:1px solid var(--border-light);">
+          <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;">Layer 4</div>
+          <div style="font-size:0.875rem;font-weight:600;color:var(--white);">Future Proof</div>
+          <div style="font-size:0.8rem;color:rgba(248,250,252,0.5);margin-top:0.25rem;">Built for what's coming</div>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem;"><a href="contact.html" class="btn btn--outline" style="font-size:0.875rem;">Apply This Framework →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCELERATORS -->
+<section class="section section--mid" aria-labelledby="accelerators-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="t-eyebrow">Emerging Accelerators</span>
+      <h2 class="t-h2" id="accelerators-heading">In development</h2>
+      <p class="t-body">A growing library of purpose-built accelerators for specific organizational challenges.</p>
+    </div>
+    <div class="grid-2" data-stagger>
+      <div class="accelerator-card">
+        <span class="coming-badge">Coming Soon</span>
+        <div style="font-size:1.5rem;margin-bottom:1rem;">🖱️</div>
+        <div class="card__title" style="margin-bottom:0.6rem;">CUCLI</div>
+        <div class="t-eyebrow" style="margin-bottom:0.75rem;font-size:0.7rem;">Configuration &amp; Adoption Accelerator</div>
+        <div class="card__body">Improving governance, administration, reporting, and adoption within ClickUp environments.</div>
+      </div>
+      <div class="accelerator-card">
+        <span class="coming-badge">Coming Soon</span>
+        <div style="font-size:1.5rem;margin-bottom:1rem;">🔁</div>
+        <div class="card__title" style="margin-bottom:0.6rem;">Recursion Delivery Framework™</div>
+        <div class="card__body">A scalable project and operational delivery methodology focused on accountability, visibility, prioritization, and execution.</div>
+      </div>
+      <div class="accelerator-card">
+        <span class="coming-badge">Coming Soon</span>
+        <div style="font-size:1.5rem;margin-bottom:1rem;">🏛️</div>
+        <div class="card__title" style="margin-bottom:0.6rem;">GRACE Operating Framework™</div>
+        <div class="card__body">A governance and operational alignment framework for communication, accountability, decision-making, and organizational effectiveness.</div>
+      </div>
+      <div class="accelerator-card">
+        <span class="coming-badge rd-badge">R&amp;D</span>
+        <div style="font-size:1.5rem;margin-bottom:1rem;">🧠</div>
+        <div class="card__title" style="margin-bottom:0.6rem;">Kodavara Context</div>
+        <div class="card__body">Knowledge continuity and portable organizational memory. Preserving, synchronizing, transporting, and recovering organizational knowledge across systems, teams, and AI platforms.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section" aria-labelledby="frameworks-cta">
+  <div class="container" style="text-align:center;">
+    <div class="reveal">
+      <span class="t-eyebrow" style="display:block;margin-bottom:1.25rem;">Apply a Framework</span>
+      <h2 class="t-h2" id="frameworks-cta" style="margin-bottom:1.25rem;max-width:600px;margin-left:auto;margin-right:auto;">Ready to put a framework to work in your organization?</h2>
+      <p class="t-body" style="max-width:520px;margin:0 auto 2.5rem;">Frameworks are only as good as their implementation. Let's talk about what you're building toward.</p>
+      <a href="contact.html" class="btn btn--gold">Schedule a Consultation →</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

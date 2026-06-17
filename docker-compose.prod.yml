@@ -1,0 +1,24 @@
+# ============================================================
+# KODAVARA — Production Overrides
+# Run with:
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+# ============================================================
+
+services:
+  web:
+    ports:
+      - "80:80"            # Production: port 80 directly
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 128M
+        reservations:
+          cpus: "0.10"
+          memory: 32M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

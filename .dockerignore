@@ -1,0 +1,25 @@
+# Git
+.git
+.gitignore
+
+# Docker files (don't include in image itself)
+docker-compose*.yml
+.dockerignore
+
+# Docs and scripts
+*.md
+deploy.sh
+
+# OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Node (if ever added)
+node_modules
+npm-debug.log
+
+# Dev artifacts
+*.zip
+*.tar.gz

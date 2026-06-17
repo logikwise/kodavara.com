@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Brian Wanbaugh — Kodavara Email Signature</title>
+  <!--
+    KODAVARA EMAIL SIGNATURE
+    ========================
+    Hosted at: https://kodavara.com/signature.html
+    (or wherever you deploy this site)
+
+    HOW TO USE IN EMAIL CLIENTS:
+    ─────────────────────────────
+    OUTLOOK (Windows):
+      File → Options → Mail → Signatures → New
+      Paste the HTML using the "Insert as HTML" option or
+      copy the rendered page from a browser and paste into
+      the signature editor.
+
+    GMAIL:
+      Settings → See all settings → General → Signature
+      Copy the rendered signature from a browser and paste.
+      (Gmail strips <style> blocks — table-based layout below is email-safe)
+
+    APPLE MAIL:
+      Preferences → Signatures → drag an .html file in,
+      or copy from browser and paste.
+
+    INLINE IMAGE NOTE:
+      The wolf logo below uses an SVG drawn inline so it
+      renders without external image hosting. If you prefer
+      to use the actual logo image file, replace the SVG
+      with: <img src="https://kodavara.com/images/wolf-logo.png"
+                  width="64" height="64" alt="Kodavara" />
+
+    COLORS:
+      Navy bg:   #0D1117
+      Cyan:      #00C2E0  (primary accent from your brand card)
+      White:     #FFFFFF
+      Light gray: #94A3B8
+  -->
+  <style>
+    /* Reset for email rendering */
+    body, html {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    * { box-sizing: border-box; }
+    a { text-decoration: none; }
+    img { border: 0; display: block; }
+
+    /* Signature container — transparent bg so it sits on any email bg */
+    .sig-wrap {
+      display: inline-block;
+      max-width: 600px;
+      width: 100%;
+    }
+
+    /* Preview page wrapper (only visible when loaded in browser) */
+    .preview-page {
+      min-height: 100vh;
+      background: #F1F5F9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .preview-card {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+      max-width: 680px;
+      width: 100%;
+    }
+    .preview-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #94A3B8;
+      margin-bottom: 20px;
+    }
+    .preview-divider {
+      height: 1px;
+      background: #E2E8F0;
+      margin: 28px 0;
+    }
+    .instructions {
+      font-size: 13px;
+      color: #475569;
+      line-height: 1.7;
+    }
+    .instructions h3 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #1E293B;
+      margin: 16px 0 6px;
+    }
+    .instructions code {
+      background: #F1F5F9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: monospace;
+      color: #0D9488;
+    }
+  </style>
+</head>
+<body>
+
+<div class="preview-page">
+  <div class="preview-card">
+    <div class="preview-label">Email Signature Preview — Brian Wanbaugh / Kodavara</div>
+
+    <!-- ============================================================
+         THE ACTUAL SIGNATURE — table-based for email client compat
+    ============================================================ -->
+    <div class="sig-wrap">
+      <!--[if mso]><table role="presentation" cellspacing="0" cellpadding="0" border="0"><tr><td><![endif]-->
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+             style="background:#0D1117; border-radius:12px; overflow:hidden; width:100%; max-width:560px; font-family:Arial,Helvetica,sans-serif;">
+        <tr>
+          <td style="padding:24px 28px;">
+
+            <!-- TOP ROW: Logo + Name/Title -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
+              <tr>
+                <!-- Wolf Logo (inline SVG — replace src with img tag if you have the PNG hosted) -->
+                <td style="width:72px; vertical-align:middle; padding-right:20px;">
+                  <svg width="64" height="64" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+                    <!-- Circuit board base lines -->
+                    <line x1="20" y1="100" x2="35" y2="100" stroke="#00C2E0" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="35" y1="100" x2="35" y2="108" stroke="#00C2E0" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="85" y1="100" x2="100" y2="100" stroke="#00C2E0" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="85" y1="100" x2="85" y2="108" stroke="#00C2E0" stroke-width="1.5" opacity="0.6"/>
+                    <line x1="60" y1="105" x2="60" y2="112" stroke="#00C2E0" stroke-width="1.5" opacity="0.6"/>
+                    <circle cx="35" cy="108" r="2" fill="#00C2E0" opacity="0.7"/>
+                    <circle cx="85" cy="108" r="2" fill="#00C2E0" opacity="0.7"/>
+                    <circle cx="60" cy="112" r="2" fill="#00C2E0" opacity="0.7"/>
+                    <!-- Left ear -->
+                    <path d="M22 55 L18 20 L40 42 Z" fill="#1E3A4A" stroke="#00C2E0" stroke-width="1.2"/>
+                    <path d="M26 52 L23 30 L37 44 Z" fill="#00C2E0" opacity="0.4"/>
+                    <!-- Right ear -->
+                    <path d="M98 55 L102 20 L80 42 Z" fill="#1E3A4A" stroke="#00C2E0" stroke-width="1.2"/>
+                    <path d="M94 52 L97 30 L83 44 Z" fill="#00C2E0" opacity="0.4"/>
+                    <!-- Head shape -->
+                    <path d="M28 58 Q24 72 26 85 Q30 100 60 102 Q90 100 94 85 Q96 72 92 58 Q85 44 60 42 Q35 44 28 58 Z" fill="#1E3A4A" stroke="#00C2E0" stroke-width="1.5"/>
+                    <!-- Snout -->
+                    <path d="M48 75 Q60 85 72 75 Q68 92 60 94 Q52 92 48 75 Z" fill="#0D1117" stroke="#00C2E0" stroke-width="1"/>
+                    <!-- Nose -->
+                    <ellipse cx="60" cy="76" rx="6" ry="4" fill="#00C2E0" opacity="0.9"/>
+                    <!-- Eyes -->
+                    <ellipse cx="46" cy="66" rx="7" ry="6" fill="#0D1117" stroke="#00C2E0" stroke-width="1.2"/>
+                    <ellipse cx="74" cy="66" rx="7" ry="6" fill="#0D1117" stroke="#00C2E0" stroke-width="1.2"/>
+                    <ellipse cx="46" cy="66" rx="4" ry="4" fill="#00C2E0" opacity="0.85"/>
+                    <ellipse cx="74" cy="66" rx="4" ry="4" fill="#00C2E0" opacity="0.85"/>
+                    <circle cx="47" cy="65" r="1.5" fill="white" opacity="0.9"/>
+                    <circle cx="75" cy="65" r="1.5" fill="white" opacity="0.9"/>
+                    <!-- Forehead circuit lines -->
+                    <line x1="60" y1="42" x2="60" y2="56" stroke="#00C2E0" stroke-width="1" opacity="0.5"/>
+                    <line x1="52" y1="50" x2="68" y2="50" stroke="#00C2E0" stroke-width="1" opacity="0.4"/>
+                    <line x1="45" y1="54" x2="52" y2="50" stroke="#00C2E0" stroke-width="1" opacity="0.35"/>
+                    <line x1="75" y1="54" x2="68" y2="50" stroke="#00C2E0" stroke-width="1" opacity="0.35"/>
+                    <!-- Cheek marks -->
+                    <line x1="30" y1="75" x2="42" y2="72" stroke="#00C2E0" stroke-width="1" opacity="0.5"/>
+                    <line x1="30" y1="79" x2="41" y2="77" stroke="#00C2E0" stroke-width="1" opacity="0.35"/>
+                    <line x1="90" y1="75" x2="78" y2="72" stroke="#00C2E0" stroke-width="1" opacity="0.5"/>
+                    <line x1="90" y1="79" x2="79" y2="77" stroke="#00C2E0" stroke-width="1" opacity="0.35"/>
+                  </svg>
+                </td>
+
+                <!-- Name + Title + Company -->
+                <td style="vertical-align:middle; border-left:2px solid #00C2E0; padding-left:20px;">
+                  <div style="font-size:22px; font-weight:700; color:#FFFFFF; letter-spacing:-0.02em; line-height:1.1; margin-bottom:4px;">
+                    Brian Wanbaugh
+                  </div>
+                  <div style="font-size:10px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#00C2E0; margin-bottom:10px;">
+                    Founder &amp; Principal Consultant
+                  </div>
+                  <!-- Divider line -->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin-bottom:8px;">
+                    <tr>
+                      <td style="font-size:20px; font-weight:800; letter-spacing:0.06em; color:#FFFFFF;">
+                        KODAVARA
+                      </td>
+                      <td style="padding:0 12px; color:#00C2E0; font-size:18px; opacity:0.5;">|</td>
+                      <td style="font-size:9px; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:#00C2E0; white-space:nowrap;">
+                        AI Strategy. Engineered for Advantage.
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+            <!-- DIVIDER -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width:100%; margin:16px 0 14px;">
+              <tr>
+                <td style="height:1px; background:linear-gradient(to right,#00C2E0,rgba(0,194,224,0.1)); font-size:0; line-height:0;">&nbsp;</td>
+              </tr>
+            </table>
+
+            <!-- CONTACT INFO ROW -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+              <tr>
+                <!-- Email -->
+                <td style="padding-right:16px; white-space:nowrap;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td style="padding-right:7px; vertical-align:middle;">
+                        <div style="width:28px; height:28px; border-radius:50%; border:1px solid rgba(0,194,224,0.4); display:inline-flex; align-items:center; justify-content:center; text-align:center; line-height:28px;">
+                          <svg width="13" height="13" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;">
+                            <rect x="2" y="4" width="16" height="12" rx="2" stroke="#00C2E0" stroke-width="1.5"/>
+                            <path d="M2 7L10 12L18 7" stroke="#00C2E0" stroke-width="1.5"/>
+                          </svg>
+                        </div>
+                      </td>
+                      <td style="vertical-align:middle;">
+                        <a href="mailto:brian@kodavara.com"
+                           style="font-size:11px; color:#CBD5E1; text-decoration:none; font-family:Arial,Helvetica,sans-serif;">
+                          brian@kodavara.com
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+
+                <!-- Separator -->
+                <td style="padding-right:16px; color:rgba(0,194,224,0.3); font-size:16px;">|</td>
+
+                <!-- Website -->
+                <td style="padding-right:16px; white-space:nowrap;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td style="padding-right:7px; vertical-align:middle;">
+                        <div style="width:28px; height:28px; border-radius:50%; border:1px solid rgba(0,194,224,0.4); display:inline-flex; align-items:center; justify-content:center; text-align:center; line-height:28px;">
+                          <svg width="13" height="13" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;">
+                            <circle cx="10" cy="10" r="8" stroke="#00C2E0" stroke-width="1.5"/>
+                            <path d="M10 2C10 2 7 6 7 10s3 8 3 8M10 2c0 0 3 4 3 8s-3 8-3 8M2 10h16" stroke="#00C2E0" stroke-width="1.5"/>
+                          </svg>
+                        </div>
+                      </td>
+                      <td style="vertical-align:middle;">
+                        <a href="https://kodavara.com"
+                           style="font-size:11px; color:#CBD5E1; text-decoration:none; font-family:Arial,Helvetica,sans-serif;">
+                          kodavara.com
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+
+                <!-- Separator -->
+                <td style="padding-right:16px; color:rgba(0,194,224,0.3); font-size:16px;">|</td>
+
+                <!-- Phone -->
+                <td style="white-space:nowrap;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                      <td style="padding-right:7px; vertical-align:middle;">
+                        <div style="width:28px; height:28px; border-radius:50%; border:1px solid rgba(0,194,224,0.4); display:inline-flex; align-items:center; justify-content:center; text-align:center; line-height:28px;">
+                          <svg width="12" height="12" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:middle;">
+                            <path d="M3 3.5C3 3.5 4 2 5.5 2c.8 0 1.5.6 2 1.5L8.5 6C9 7 8.5 8 8 8.5c-.5.5-.5 1 .5 2.5s2 2 2.5 1.5c.5-.5 1.5-1 2.5-.5l2.5 1c.9.5 1.5 1.2 1.5 2C17.5 16 16 18 14 18 8.5 18 2 11.5 2 6c0-2 1.5-2.5 1-2.5Z" stroke="#00C2E0" stroke-width="1.5"/>
+                          </svg>
+                        </div>
+                      </td>
+                      <td style="vertical-align:middle;">
+                        <a href="tel:+17754762583"
+                           style="font-size:11px; color:#CBD5E1; text-decoration:none; font-family:Arial,Helvetica,sans-serif;">
+                          775-476-2583
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+      <!--[if mso]></td></tr></table><![endif]-->
+    </div>
+    <!-- END SIGNATURE -->
+
+    <div class="preview-divider"></div>
+
+    <div class="instructions">
+      <p><strong>This page is hosted at:</strong> <code>https://kodavara.com/signature.html</code></p>
+
+      <h3>Gmail</h3>
+      <p>Open this page in Chrome → select the entire dark signature card → copy → go to Gmail Settings → General → Signatures → paste.</p>
+
+      <h3>Outlook (Windows)</h3>
+      <p>File → Options → Mail → Signatures → New → click into the editor → Insert → Object → HTML. Alternatively, open this page in a browser, select the signature, copy, and paste into the Outlook signature editor directly.</p>
+
+      <h3>Outlook (Mac) / Apple Mail</h3>
+      <p>Open this page in Safari → select the signature card → copy → paste into Mail's signature editor (Mail → Preferences → Signatures).</p>
+
+      <h3>Logo image note</h3>
+      <p>The wolf logo above is drawn as an inline SVG approximation. For the pixel-perfect version from your brand card, upload <code>wolf-logo.png</code> to <code>/images/</code> on your server and update the <code>&lt;svg&gt;</code> block with: <code>&lt;img src="https://kodavara.com/images/wolf-logo.png" width="64" height="64" alt="Kodavara"&gt;</code></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

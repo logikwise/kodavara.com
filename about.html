@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kodavara — Brian Wanbaugh, Founder & Principal Consultant. AI Strategy. Engineered for Advantage." />
+  <title>About — Kodavara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .belief-block {
+      padding: 2.5rem;
+      border-radius: 16px;
+      border: 1px solid var(--border-light);
+      background: var(--navy-light);
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .belief-block::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--blue), transparent);
+      transform: scaleX(0);
+      transition: transform 0.4s;
+      transform-origin: left;
+    }
+    .belief-block:hover::after { transform: scaleX(1); }
+    .belief-block:hover { border-color: rgba(45,140,255,0.2); }
+    .belief-icon { font-size: 2rem; margin-bottom: 1rem; }
+    .belief-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+    .belief-body {
+      font-size: 0.9rem;
+      color: rgba(248,250,252,0.62);
+      line-height: 1.7;
+    }
+    .expertise-tag {
+      display: inline-flex;
+      padding: 0.45rem 0.9rem;
+      background: rgba(45,140,255,0.08);
+      border: 1px solid rgba(45,140,255,0.15);
+      border-radius: 8px;
+      font-size: 0.825rem;
+      font-weight: 500;
+      color: rgba(248,250,252,0.75);
+      margin: 0.3rem;
+      transition: all 0.2s;
+    }
+    .expertise-tag:hover {
+      background: rgba(45,140,255,0.15);
+      color: var(--white);
+    }
+    .quote-block {
+      border-left: 3px solid var(--blue);
+      padding: 1.5rem 2rem;
+      background: rgba(45,140,255,0.04);
+      border-radius: 0 12px 12px 0;
+      margin: 2rem 0;
+    }
+    .quote-block p {
+      font-size: 1.15rem;
+      font-style: italic;
+      color: rgba(248,250,252,0.8);
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-label="About hero">
+  <div class="page-hero__gradient" aria-hidden="true"></div>
+  <div class="orb orb--blue" style="bottom:0;right:20%;" aria-hidden="true"></div>
+  <div class="container page-hero__content">
+    <span class="t-eyebrow" style="display:block;margin-bottom:1.25rem;">About Kodavara</span>
+    <h1 class="t-display" style="margin-bottom:1.5rem;">Building Better Systems<br/><span class="accent">for Better Organizations</span></h1>
+    <p class="t-body">Technology alone does not create transformation. Organizations succeed when people, processes, systems, and technology work together toward a common purpose.</p>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="section section--mid" aria-labelledby="philosophy-heading">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
+      <div class="reveal-left">
+        <span class="t-eyebrow" style="display:block;margin-bottom:1rem;">The Kodavara Philosophy</span>
+        <h2 class="t-h2" id="philosophy-heading" style="margin-bottom:1.5rem;">We believe in <span class="accent">substance over noise</span></h2>
+        <p class="t-body" style="margin-bottom:1.25rem;">In a world increasingly filled with tools, platforms, dashboards, and AI-generated content, the organizations that succeed are the ones that invest in the fundamentals: clear processes, skilled people, and technology that actually serves the work.</p>
+        <p class="t-body" style="margin-bottom:1.25rem;">Kodavara was built on a simple conviction: most organizations don't need more technology — they need better systems. And when they do add technology, including AI, they need help adopting it with intention, governance, and a clear connection to human outcomes.</p>
+        <div class="quote-block">
+          <p>"Technology succeeds when people succeed."</p>
+        </div>
+        <p class="t-body">This is not just a tagline. It shapes every engagement, every recommendation, and every framework we build.</p>
+      </div>
+      <div class="reveal-right">
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <div class="belief-block">
+            <div class="belief-icon">🧭</div>
+            <div class="belief-title">AI Should Elevate People</div>
+            <div class="belief-body">We believe AI's greatest potential is amplifying human capability — not replacing the judgment, creativity, and relationships that make organizations succeed.</div>
+          </div>
+          <div class="belief-block">
+            <div class="belief-icon">📚</div>
+            <div class="belief-title">Knowledge Is a Strategic Asset</div>
+            <div class="belief-body">The expertise embedded in your people and processes is irreplaceable. We help organizations capture and preserve that expertise before it walks out the door.</div>
+          </div>
+          <div class="belief-block">
+            <div class="belief-icon">⚖️</div>
+            <div class="belief-title">Substance Over Noise</div>
+            <div class="belief-body">In a world filled with AI-generated volume, organizations that invest in depth, clarity, and real expertise stand apart from the noise.</div>
+          </div>
+          <div class="belief-block">
+            <div class="belief-icon">🤝</div>
+            <div class="belief-title">Technology Should Feel Human</div>
+            <div class="belief-body">The best technology implementations disappear into the workflow. If a system fights its users, it's failing — regardless of its capabilities.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section class="section section--dark" aria-labelledby="approach-heading">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <span class="t-eyebrow">Our Approach</span>
+      <h2 class="t-h2" id="approach-heading">How we engage</h2>
+      <p class="t-body">Every engagement follows a disciplined progression — because moving fast on a weak foundation creates compounding problems.</p>
+    </div>
+    <div class="framework-steps" style="max-width:680px;margin:0 auto;" data-stagger>
+      <div class="step">
+        <div class="step__num">01</div>
+        <div>
+          <div class="step__label">First</div>
+          <div class="step__title">Assess</div>
+          <div class="step__desc">Understand where you actually are — not where you think you are. Honest assessment of people, process, systems, and data before recommending anything.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">02</div>
+        <div>
+          <div class="step__label">Second</div>
+          <div class="step__title">Design</div>
+          <div class="step__desc">Build the operational architecture and technology blueprint before touching a platform. Strategy precedes implementation.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">03</div>
+        <div>
+          <div class="step__label">Third</div>
+          <div class="step__title">Implement</div>
+          <div class="step__desc">Execute with discipline — structured deployment, change management, training, and adoption measurement built in from the start.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">04</div>
+        <div>
+          <div class="step__label">Fourth</div>
+          <div class="step__title">Amplify</div>
+          <div class="step__desc">Introduce automation and AI on a working foundation — so it creates leverage rather than compounding confusion.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__num">05</div>
+        <div>
+          <div class="step__label">Ongoing</div>
+          <div class="step__title">Optimize</div>
+          <div class="step__desc">Build in continuous improvement from the start. Systems that don't evolve decay. We help organizations build the habit of iteration.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section class="section section--mid" aria-labelledby="expertise-heading">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <span class="t-eyebrow">Areas of Expertise</span>
+      <h2 class="t-h2" id="expertise-heading">Brian Wanbaugh — Built from two decades of practice</h2>
+      <p class="t-body">Kodavara's capabilities span the full spectrum from organizational strategy to hands-on implementation — developed through real engagements across industries and organizational sizes.</p>
+    </div>
+    <div style="text-align:center;" class="reveal">
+      <span class="expertise-tag">Strategic Advisory</span>
+      <span class="expertise-tag">Operational Excellence</span>
+      <span class="expertise-tag">Business Analysis</span>
+      <span class="expertise-tag">Workflow Architecture</span>
+      <span class="expertise-tag">Project &amp; Program Management</span>
+      <span class="expertise-tag">Knowledge Management</span>
+      <span class="expertise-tag">Workflow Automation</span>
+      <span class="expertise-tag">AI Adoption</span>
+      <span class="expertise-tag">AI Governance</span>
+      <span class="expertise-tag">Agent Design</span>
+      <span class="expertise-tag">Governance &amp; Compliance</span>
+      <span class="expertise-tag">Training &amp; Enablement</span>
+      <span class="expertise-tag">Change Management</span>
+      <span class="expertise-tag">ClickUp Consulting</span>
+      <span class="expertise-tag">PMO Development</span>
+      <span class="expertise-tag">Digital Transformation</span>
+      <span class="expertise-tag">Human-AI Integration</span>
+      <span class="expertise-tag">System Integrations</span>
+    </div>
+  </div>
+</section>
+
+<!-- PERSPECTIVE -->
+<section class="section section--dark" aria-labelledby="perspective-heading">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;">
+      <div class="reveal-left">
+        <span class="t-eyebrow" style="display:block;margin-bottom:1rem;">Our Perspective on AI</span>
+        <h2 class="t-h2" id="perspective-heading" style="margin-bottom:1.5rem;">The future we're <span class="accent">building toward</span></h2>
+        <p class="t-body" style="margin-bottom:1.25rem;">We are at an inflection point. AI is moving from novelty to operational reality — and the organizations that will succeed are not necessarily the ones moving fastest, but the ones moving most intentionally.</p>
+        <p class="t-body" style="margin-bottom:1.25rem;">The danger is not AI itself. The danger is deploying AI on weak operational foundations, without governance, without training, and without a clear understanding of what you're optimizing for.</p>
+        <p class="t-body">Kodavara exists to help organizations avoid that mistake — building the foundation first, then amplifying it with AI in ways that are sustainable, responsible, and genuinely valuable.</p>
+      </div>
+      <div class="reveal-right" style="display:flex;flex-direction:column;gap:1.5rem;">
+        <div style="padding:2rem;background:var(--navy-light);border:1px solid var(--border-light);border-radius:16px;">
+          <div class="t-eyebrow" style="margin-bottom:0.75rem;">On Agents</div>
+          <p style="font-size:0.9375rem;color:rgba(248,250,252,0.65);line-height:1.7;">AI agents are increasingly capable. But agents are only as good as the systems they operate within — the knowledge they can access, the processes they follow, and the oversight humans maintain. Agent readiness is a new organizational capability that must be deliberately built.</p>
+        </div>
+        <div style="padding:2rem;background:var(--navy-light);border:1px solid var(--border-light);border-radius:16px;">
+          <div class="t-eyebrow" style="margin-bottom:0.75rem;">On Knowledge</div>
+          <p style="font-size:0.9375rem;color:rgba(248,250,252,0.65);line-height:1.7;">Organizations that invest in capturing and preserving organizational knowledge now will have a structural advantage in the AI era. The organizations that don't will find that their AI systems are only as good as the institutional memory they failed to document.</p>
+        </div>
+        <div style="padding:2rem;background:var(--navy-light);border:1px solid var(--border-light);border-radius:16px;">
+          <div class="t-eyebrow" style="margin-bottom:0.75rem;">The Kodavara Commitment</div>
+          <p style="font-size:0.9375rem;color:rgba(248,250,252,0.65);line-height:1.7;">We commit to providing advice grounded in what's real — not what's trendy. We will tell you when you're not ready. We will tell you when a simpler solution is better. And we will always prioritize your organization's long-term capability over short-term deliverables.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section" aria-labelledby="about-cta">
+  <div class="container" style="text-align:center;">
+    <div class="reveal">
+      <span class="t-eyebrow" style="display:block;margin-bottom:1.25rem;">Work With Us</span>
+      <h2 class="t-h2" id="about-cta" style="margin-bottom:1.25rem;max-width:600px;margin-left:auto;margin-right:auto;">Technology succeeds when people succeed</h2>
+      <p class="t-body" style="max-width:520px;margin:0 auto 2.5rem;">Let's start with a conversation about where your organization is and where it needs to go.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn--gold">Schedule a Consultation →</a>
+        <a href="services.html" class="btn btn--secondary">Explore Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

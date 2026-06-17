@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kodavara helps organizations design better systems, empower their people, and responsibly leverage automation and AI." />
+  <title>Kodavara — Design the System. Empower the People. Amplify with AI.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<div id="nav-placeholder"></div>
+
+<!-- ============================================================
+  HERO
+============================================================ -->
+<section class="hero" aria-label="Hero">
+  <canvas id="topo-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+  <div class="hero__gradient" aria-hidden="true"></div>
+
+  <!-- Mountain SVG -->
+  <div class="hero__mountain" aria-hidden="true">
+    <svg viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
+      <!-- Background mountain range -->
+      <path d="M0 600 L150 320 L280 420 L400 180 L520 350 L650 260 L780 380 L900 280 L900 600 Z"
+            fill="url(#mountain-bg)" opacity="0.3"/>
+      <!-- Mid mountain -->
+      <path d="M100 600 L320 280 L480 420 L600 160 L720 340 L900 220 L900 600 Z"
+            fill="url(#mountain-mid)" opacity="0.5"/>
+      <!-- Main peak -->
+      <path d="M200 600 L450 80 L700 600 Z"
+            fill="url(#mountain-main)"/>
+      <!-- Snow cap -->
+      <path d="M450 80 L405 200 L450 185 L495 200 Z"
+            fill="rgba(245,185,66,0.9)"/>
+      <!-- Topographic lines on peak -->
+      <path d="M390 220 Q450 200 510 220" stroke="rgba(45,140,255,0.4)" stroke-width="1" fill="none"/>
+      <path d="M370 260 Q450 235 530 260" stroke="rgba(45,140,255,0.3)" stroke-width="1" fill="none"/>
+      <path d="M345 310 Q450 278 555 310" stroke="rgba(45,140,255,0.25)" stroke-width="1" fill="none"/>
+      <path d="M315 365 Q450 325 585 365" stroke="rgba(45,140,255,0.2)" stroke-width="1" fill="none"/>
+      <path d="M280 425 Q450 376 620 425" stroke="rgba(45,140,255,0.15)" stroke-width="1" fill="none"/>
+      <path d="M245 490 Q450 432 655 490" stroke="rgba(45,140,255,0.12)" stroke-width="1" fill="none"/>
+      <!-- Ridge line glow -->
+      <path d="M200 600 L450 80 L700 600" stroke="rgba(45,140,255,0.15)" stroke-width="2" fill="none"/>
+      <defs>
+        <linearGradient id="mountain-bg" x1="450" y1="180" x2="450" y2="600" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#1E293B"/>
+          <stop offset="100%" stop-color="#0F172A"/>
+        </linearGradient>
+        <linearGradient id="mountain-mid" x1="450" y1="160" x2="450" y2="600" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#263348"/>
+          <stop offset="100%" stop-color="#1E293B"/>
+        </linearGradient>
+        <linearGradient id="mountain-main" x1="450" y1="80" x2="450" y2="600" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#2D4A7A"/>
+          <stop offset="40%" stop-color="#1E3A5F"/>
+          <stop offset="100%" stop-color="#0F172A"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+        <span class="t-eyebrow">Operational Excellence &amp; AI Transformation</span>
+      </div>
+      <h1 class="t-display hero__headline">
+        <span class="hero__headline-line">Design the System.</span>
+        <span class="hero__headline-line">Empower the People.</span>
+        <span class="hero__headline-line accent">Amplify with AI.</span>
+      </h1>
+      <p class="t-body hero__sub">
+        Kodavara helps organizations align strategy, workflows, systems, automation, and artificial intelligence to create scalable, sustainable, and human-centered operations.
+      </p>
+      <div class="hero__actions">
+        <a href="contact.html" class="btn btn--primary">
+          Schedule a Strategy Session
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="frameworks.html" class="btn btn--secondary">Explore Frameworks</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+  THE CHALLENGE
+============================================================ -->
+<section class="section section--mid" aria-labelledby="challenge-heading">
+  <div class="orb orb--blue" style="top:-100px;right:-100px;" aria-hidden="true"></div>
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;">
+      <div class="reveal-left">
+        <span class="t-eyebrow" style="display:block;margin-bottom:1rem;">The Challenge</span>
+        <h2 class="t-h2" id="challenge-heading" style="margin-bottom:1.5rem;">Most organizations don't need more tools.<br/><span class="accent">They need better systems.</span></h2>
+        <p class="t-body" style="margin-bottom:1.25rem;">Many teams are overwhelmed by disconnected platforms, fragmented processes, increasing complexity, and the rapid pace of technological change.</p>
+        <p class="t-body" style="margin-bottom:1.25rem;">AI promises transformation. Without strong foundations, it often creates more noise than value.</p>
+        <p class="t-body">Kodavara helps organizations create clarity, align systems, empower teams, and responsibly leverage automation and AI where it delivers measurable impact.</p>
+      </div>
+      <div class="reveal-right">
+        <div class="comparison">
+          <div class="comparison__col comparison__col--old">
+            <div class="comparison__title" style="color:var(--slate);">Traditional Approach</div>
+            <ul class="comparison__list">
+              <li><span class="icon">✗</span> More Tools</li>
+              <li><span class="icon">✗</span> More Platforms</li>
+              <li><span class="icon">✗</span> More Complexity</li>
+              <li><span class="icon">✗</span> More Noise</li>
+              <li><span class="icon">✗</span> Technology-First Decisions</li>
+            </ul>
+          </div>
+          <div class="comparison__divider"><span class="comparison__vs">VS</span></div>
+          <div class="comparison__col comparison__col--new">
+            <div class="comparison__title accent">Kodavara Approach</div>
+            <ul class="comparison__list">
+              <li><span class="icon" style="color:var(--blue)">✓</span> Business Goals First</li>
+              <li><span class="icon" style="color:var(--blue)">✓</span> Process Design</li>
+              <li><span class="icon" style="color:var(--blue)">✓</span> Systems Alignment</li>
+              <li><span class="icon" style="color:var(--blue)">✓</span> Intentional Automation</li>
+              <li><span class="icon" style="color:var(--blue)">✓</span> Human-Centered AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  BELIEFS
+============================================================ -->
+<section class="section section--dark" aria-labelledby="beliefs-heading">
+  <div class="container">
+    <div class="section-header section-header--center reveal">
+      <span class="t-eyebrow">Our Core Beliefs</span>
+      <h2 class="t-h2" id="beliefs-heading">What we know to be true</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 5rem;" data-stagger>
+      <div class="pillar">
+        <span class="pillar__number">01</span>
+        <div class="pillar__title">People Create Value</div>
+        <div class="pillar__body">Technology is a multiplier. Human judgment, expertise, and relationships remain the source of real organizational value.</div>
+      </div>
+      <div class="pillar">
+        <span class="pillar__number">02</span>
+        <div class="pillar__title">Systems Create Consistency</div>
+        <div class="pillar__body">Reliable outcomes require well-designed systems — not heroic individual effort or lucky timing.</div>
+      </div>
+      <div class="pillar">
+        <span class="pillar__number">03</span>
+        <div class="pillar__title">AI Creates Leverage</div>
+        <div class="pillar__body">Used intentionally, AI amplifies what great people and strong systems can already do. It is a force multiplier, not a replacement.</div>
+      </div>
+      <div class="pillar">
+        <span class="pillar__number">04</span>
+        <div class="pillar__title">Knowledge Is a Strategic Asset</div>
+        <div class="pillar__body">Organizational expertise, captured and shared effectively, becomes a durable competitive advantage that compounds over time.</div>
+      </div>
+      <div class="pillar">
+        <span class="pillar__number">05</span>
+        <div class="pillar__title">Technology Should Feel More Human</div>
+        <div class="pillar__body">The best implementations disappear into the workflow. Technology that fights its users is technology that fails.</div>
+      </div>
+      <div class="pillar">
+        <span class="pillar__number">06</span>
+        <div class="pillar__title">Substance Matters More Than Noise</div>
+        <div class="pillar__body">In a world increasingly filled with AI-generated content, organizations that lead with depth and clarity stand apart.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  SERVICES OVERVIEW
+============================================================ -->
+<section class="section section--mid" aria-labelledby="services-heading">
+  <div class="orb orb--gold" style="bottom:-50px;left:-100px;" aria-hidden="true"></div>
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="t-eyebrow">What We Do</span>
+      <h2 class="t-h2" id="services-heading">End-to-end capability, from strategy to execution</h2>
+      <p class="t-body">Every engagement begins with understanding your goals — not prescribing technology.</p>
+    </div>
+    <div class="grid-3" data-stagger>
+      <div class="card">
+        <div class="card__icon">🎯</div>
+        <div class="card__title">Strategy &amp; Advisory</div>
+        <div class="card__body">Create clarity before making technology decisions. AI readiness assessments, operational reviews, technology roadmaps, and executive workshops.</div>
+        <ul class="card__list" style="margin-top:1.25rem">
+          <li>AI Readiness Assessments</li>
+          <li>Technology Roadmaps</li>
+          <li>Governance Planning</li>
+          <li>Executive Workshops</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__icon">⚙️</div>
+        <div class="card__title">Work Management Platforms</div>
+        <div class="card__body">Deep specialization in ClickUp, Notion, and the broader ecosystem — from initial setup to mature, optimized workspaces that teams actually adopt.</div>
+        <ul class="card__list" style="margin-top:1.25rem">
+          <li>Onboarding &amp; workspace setup</li>
+          <li>Custom workflows &amp; automations</li>
+          <li>Advanced workflow optimization</li>
+          <li>Workspace cleanup &amp; restructure</li>
+          <li>Integrations &amp; data connections</li>
+          <li>Training, coaching &amp; adoption</li>
+          <li>Project &amp; change management</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__icon card__icon--gold">⚡</div>
+        <div class="card__title">Automation &amp; Orchestration</div>
+        <div class="card__body">Reduce friction and improve efficiency through intentional automation — connecting systems, removing manual effort, enabling scale.</div>
+        <ul class="card__list" style="margin-top:1.25rem">
+          <li>n8n, Make &amp; Zapier workflows</li>
+          <li>Multi-system orchestration</li>
+          <li>Data sync &amp; transformation</li>
+          <li>API integrations</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__icon">🤖</div>
+        <div class="card__title">AI &amp; Intelligent Agents</div>
+        <div class="card__body">Adopt AI with intention. Strategy, governance, agent design, and human-AI optimization that builds capability without sacrificing control.</div>
+        <ul class="card__list" style="margin-top:1.25rem">
+          <li>AI Strategy &amp; Governance</li>
+          <li>Agent Design</li>
+          <li>Knowledge Systems</li>
+          <li>Human-AI Optimization</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card__icon">🗄️</div>
+        <div class="card__title">Data &amp; Systems</div>
+        <div class="card__body">Keep data accurate and accessible across every platform — migrations, disaster recovery, and the integration pipelines that tie it all together.</div>
+        <ul class="card__list" style="margin-top:1.25rem">
+          <li>Data migration &amp; platform moves</li>
+          <li>Disaster recovery planning</li>
+          <li>Business continuity frameworks</li>
+          <li>ETL pipelines &amp; data archiving</li>
+        </ul>
+      </div>
+      <div class="card" style="background:linear-gradient(135deg,rgba(45,140,255,0.1),rgba(45,140,255,0.04));border-color:rgba(45,140,255,0.2);">
+        <div class="card__icon">🏔️</div>
+        <div class="card__title">Ready to Begin?</div>
+        <div class="card__body" style="margin-bottom:1.5rem;">Every engagement is tailored to your goals. Let's explore the right approach for your organization.</div>
+        <a href="services.html" class="btn btn--outline" style="font-size:0.875rem;padding:0.65rem 1.25rem">Explore All Services →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  PLATFORMS WE SPECIALIZE IN — HOMEPAGE TEASER
+============================================================ -->
+<section class="tools-teaser" aria-labelledby="tools-home-heading">
+  <div class="orb orb--blue" style="top:-80px;right:-60px;opacity:0.5;" aria-hidden="true"></div>
+  <div class="container">
+    <div class="tools-teaser__header">
+      <div class="reveal-left">
+        <span class="t-eyebrow" style="display:block;margin-bottom:1rem;">Platforms We Specialize In</span>
+        <h2 class="t-h2" id="tools-home-heading" style="margin-bottom:1.25rem;">We work inside the tools <span class="accent">your teams already use</span></h2>
+        <p class="t-body" style="margin-bottom:1.75rem;">From work management to automation to data movement — Kodavara brings deep hands-on expertise across the platforms that run modern operations. We don't just advise on tools. We configure, connect, and optimize them.</p>
+        <a href="services.html#platforms" class="btn btn--outline">See Full Platform Expertise →</a>
+      </div>
+      <div class="reveal-right">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
+          <div style="padding:1.1rem 1.25rem;background:var(--navy-light);border:1px solid var(--border-light);border-radius:12px;border-top:2px solid var(--blue);">
+            <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--blue);margin-bottom:0.65rem;">Work Management</div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.3rem;">
+              <span class="tool-pill tool-pill--primary">ClickUp</span>
+              <span class="tool-pill tool-pill--primary">Notion</span>
+              <span class="tool-pill">Asana</span>
+              <span class="tool-pill">Monday.com</span>
+              <span class="tool-pill">Airtable</span>
+              <span class="tool-pill">Microsoft 365</span>
+              <span class="tool-pill">Google Workspace</span>
+            </div>
+          </div>
+          <div style="padding:1.1rem 1.25rem;background:var(--navy-light);border:1px solid var(--border-light);border-radius:12px;border-top:2px solid #00C2E0;">
+            <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#00C2E0;margin-bottom:0.65rem;">Automation</div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.3rem;">
+              <span class="tool-pill tool-pill--cyan">n8n</span>
+              <span class="tool-pill tool-pill--cyan">Make</span>
+              <span class="tool-pill tool-pill--cyan">Zapier</span>
+              <span class="tool-pill">Power Automate</span>
+              <span class="tool-pill">Activepieces</span>
+              <span class="tool-pill">API Integrations</span>
+            </div>
+          </div>
+          <div style="padding:1.1rem 1.25rem;background:var(--navy-light);border:1px solid var(--border-light);border-radius:12px;border-top:2px solid var(--gold);">
+            <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.65rem;">Data Movement</div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.3rem;">
+              <span class="tool-pill tool-pill--gold">Data Sync</span>
+              <span class="tool-pill tool-pill--gold">Transformation</span>
+              <span class="tool-pill">ETL Pipelines</span>
+              <span class="tool-pill">API-to-API</span>
+              <span class="tool-pill">CRM / ERP</span>
+            </div>
+          </div>
+          <div style="padding:1.1rem 1.25rem;background:var(--navy-light);border:1px solid var(--border-light);border-radius:12px;border-top:2px solid #4ade80;">
+            <div style="font-size:0.65rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#4ade80;margin-bottom:0.65rem;">Migration & Recovery</div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.3rem;">
+              <span class="tool-pill tool-pill--green">Data Migration</span>
+              <span class="tool-pill tool-pill--green">Disaster Recovery</span>
+              <span class="tool-pill">Business Continuity</span>
+              <span class="tool-pill">Archiving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  FRAMEWORKS TEASER
+============================================================ -->
+<section class="section section--dark" aria-labelledby="frameworks-heading">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;">
+      <div class="reveal-left">
+        <span class="t-eyebrow" style="display:block;margin-bottom:1rem;">Frameworks &amp; Accelerators</span>
+        <h2 class="t-h2" id="frameworks-heading" style="margin-bottom:1.5rem;">Practical methodologies that <span class="accent">accelerate outcomes</span></h2>
+        <p class="t-body" style="margin-bottom:2rem;">Kodavara's proprietary frameworks provide structured paths from where you are to where you need to be — without the guesswork of starting from scratch.</p>
+        <a href="frameworks.html" class="btn btn--primary">
+          View All Frameworks
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+      <div class="reveal-right" data-stagger>
+        <div class="card" style="margin-bottom:1rem;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;">
+            <div class="card__title" style="margin:0">Intelligent Operations Framework™</div>
+            <span class="badge badge--blue">6 Phases</span>
+          </div>
+          <div class="flow" style="gap:0.25rem;flex-wrap:wrap;">
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Assess</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Design</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Implement</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Automate</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Amplify</span>
+          </div>
+        </div>
+        <div class="card" style="margin-bottom:1rem;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;">
+            <div class="card__title" style="margin:0">Human-AI Partnership Framework™</div>
+            <span class="badge badge--gold">Core</span>
+          </div>
+          <div class="flow" style="gap:0.25rem;flex-wrap:wrap;">
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">People</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Process</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Systems</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Intelligence</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Outcomes</span>
+          </div>
+        </div>
+        <div class="card">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.75rem;">
+            <div class="card__title" style="margin:0">AI Adoption Framework™</div>
+            <span class="badge badge--green">5 Stages</span>
+          </div>
+          <div class="flow" style="gap:0.25rem;flex-wrap:wrap;">
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Awareness</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Readiness</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Enablement</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Governance</span>
+            <span class="flow-arrow" style="font-size:0.9rem">→</span>
+            <span class="flow-node" style="font-size:0.75rem;padding:0.4rem 0.85rem">Scale</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+  CTA
+============================================================ -->
+<section class="section cta-section" aria-labelledby="cta-heading">
+  <div class="container" style="text-align:center;">
+    <div class="reveal">
+      <span class="t-eyebrow" style="display:block;margin-bottom:1.25rem;">Ready to Begin?</span>
+      <h2 class="t-h2" id="cta-heading" style="margin-bottom:1.25rem;max-width:700px;margin-left:auto;margin-right:auto;">Ready to build a more capable organization?</h2>
+      <p class="t-body" style="max-width:560px;margin:0 auto 2.5rem;">Schedule a consultation and discover how Kodavara can help align your systems, empower your teams, and amplify outcomes.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html" class="btn btn--gold">
+          Schedule a Consultation
+          <span class="btn-arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="about.html" class="btn btn--secondary">Learn About Kodavara</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div id="footer-placeholder"></div>
+
+<!-- Scripts -->
+<script src="js/components.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
