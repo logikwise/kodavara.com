@@ -1,48 +1,19 @@
-# ============================================================
-# KODAVARA — Docker Compose
-# Traefik handles all routing via labels — no published port needed.
-# Usage:
-#   docker compose up -d
-#   docker compose pull && docker compose up -d   # update
-#   docker compose down                            # stop
-# ============================================================
-
 services:
   web:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ghcr.io/logikwise/kodavara-web:latest
-    container_name: kodavara
-    restart: always
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    env_file:
+      - .env
     healthcheck:
-      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/"]
+      test: ["CMD", "wget", "--no-verbose", "--spider", "http://127.0.0.1/"]
       interval: 30s
       timeout: 5s
-      retries: 3
-      start_period: 10s
-    deploy:
-      resources:
-        limits:
-          cpus: "0.50"
-          memory: 128M
-        reservations:
-          cpus: "0.10"
-          memory: 32M
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
-        max-file: "3"
+      retries: 5
     labels:
-      - "com.kodavara.description=Kodavara Static Website"
-      - "com.kodavara.version=1.0"
       - "traefik.enable=true"
       - "traefik.http.routers.kodavara.rule=Host(`kodavara.com`)"
       - "traefik.http.routers.kodavara-secure.rule=Host(`kodavara.com`)"
-    networks:
-      - traefik_network
-
-networks:
-  traefik_network:
-    external: true

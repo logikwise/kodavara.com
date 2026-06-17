@@ -23,3 +23,7 @@ npm-debug.log
 # Dev artifacts
 *.zip
 *.tar.gz
+
+# Env files — baked into image is a security risk
+.env
+.env.*

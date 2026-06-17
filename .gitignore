@@ -1,8 +1,11 @@
+# Environment — never commit real values
+.env
+
 # OS
 .DS_Store
 Thumbs.db
 
-# ZIPs / archives
+# Archives
 *.zip
 *.tar.gz
 
