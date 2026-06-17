@@ -1,8 +1,9 @@
 # ============================================================
-# KODAVARA — Docker Compose
+# KODAVARA — Docker Compose (single file, production-ready)
 # Usage:
-#   Local dev:   docker compose up
-#   Production:  docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+#   docker compose up -d
+#   docker compose pull && docker compose up -d   # update
+#   docker compose down                            # stop
 # ============================================================
 
 services:
@@ -10,17 +11,30 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: kodavara-web:latest
+    image: ghcr.io/logikwise/kodavara-web:latest
     container_name: kodavara
     ports:
-      - "8080:80"          # Local: http://localhost:8080
-    restart: unless-stopped
+      - "80:80"
+    restart: always
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/"]
       interval: 30s
       timeout: 5s
       retries: 3
       start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 128M
+        reservations:
+          cpus: "0.10"
+          memory: 32M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
     labels:
       - "com.kodavara.description=Kodavara Static Website"
       - "com.kodavara.version=1.0"
